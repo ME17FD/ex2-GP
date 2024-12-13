@@ -8,8 +8,13 @@ public class Personnage {
     
     
     public String tourner(int fois) {
+        
         orientationIndex = (orientationIndex + fois) % ORIENTATIONS.length;
-        return ORIENTATIONS[orientationIndex];
+
+        while (orientationIndex < 0) {
+            orientationIndex += ORIENTATIONS.length;
+        }
+        return ORIENTATIONS[orientationIndex ];
     }
 
     
