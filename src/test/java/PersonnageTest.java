@@ -49,6 +49,6 @@ public class PersonnageTest {
     public void testTournerGrandNombre() {
         Personnage personnage = new Personnage();
         // Tester avec un grand nombre de rotations (100 quarts de tour)
-        assertEquals("SUD", personnage.tourner(100));
+        assertEquals("NORD", personnage.tourner(100));
     }
 }
